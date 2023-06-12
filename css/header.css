@@ -8,8 +8,7 @@
 }
 .header__container{
    display: flex;
-   justify-content: space-evenly
-
+   justify-content:space-evenly;
 }
 .header__logo {
     width: 186px;
@@ -46,6 +45,13 @@
     color: var(--default-text-color);
   
 }
+.header__list .list__item{
+    text-decoration: none;
+    color: var(--default-text-color);
+}
+.header__list .list__item:hover {
+    text-decoration: underline;
+}
 .icons__container {
     display: flex;
     flex-direction: row;
@@ -54,4 +60,14 @@
     top: 6.96px;
     left: 3.84px;
 
+}
+@media (min-width:500px){
+    .header__container{
+        display: flex;
+        .header__list{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+       
+    }
 }
